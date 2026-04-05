@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Resize Image Online Free — Change Image Dimensions | EncryptFiles.online</title>
+<meta name="description" content="Resize JPG, PNG, WEBP images online free. Change dimensions by pixels or percentage. Aspect ratio lock. No upload required.">
+<meta name="keywords" content="resize image online free, change image size, image resizer online, resize jpg png, scale image dimensions">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://encryptfiles.online/resize-image/">
+<meta property="og:title" content="Resize Image Online Free — Change Image Dimensions"><meta property="og:description" content="Resize JPG, PNG, WEBP images online free. Change dimensions by pixels or percentage. Aspect ratio lock. No upload required.">
+<meta property="og:url" content="https://encryptfiles.online/resize-image/"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/css/main.css">
+<script type="application/ld+json">{ "@context":"https://schema.org","@type":"WebApplication","name":"Resize Image Online Free — Change Image Dimensions","url":"https://encryptfiles.online/resize-image/","description":"Resize JPG, PNG, WEBP images online free. Change dimensions by pixels or percentage. Aspect ratio lock. No upload required.","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{ "@type":"Offer","price":"0","priceCurrency":"USD"} }</script>
+<script type="application/ld+json">{ "@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Does resizing reduce quality?", "acceptedAnswer": {"@type": "Answer", "text": "Downscaling maintains quality. Upscaling (making larger) may reduce sharpness as new pixels must be interpolated."}}, {"@type": "Question", "name": "Does aspect ratio lock work?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. When locked, changing width auto-updates height proportionally."}}, {"@type": "Question", "name": "What is the maximum output size?", "acceptedAnswer": {"@type": "Answer", "text": "Browser canvas supports up to 16,384x16,384 on modern devices."}}] }</script>
+</head>
+<body>
+<div class="bg-grid"></div><div class="bg-glow"></div><div class="bg-glow2"></div>
+<div id="nav-placeholder"></div>
+<section class="page-hero"><div class="wrap-sm text-center">
+  <nav class="breadcrumb" style="justify-content:center;"><a href="/">Home</a><span>&#8250;</span><a href="/tools/">Tools</a><span>&#8250;</span><span>Image Resizer</span></nav>
+  <div class="eyebrow"><span class="eyebrow-dot"></span>Image Resizer</div>
+  <h1 class="page-title">Resize Image<br><span class="grad">Online Free</span></h1>
+  <p class="page-sub">Change image dimensions by pixels or percentage. Lock aspect ratio, choose output format. Runs entirely in your browser — no uploads.</p>
+  <div class="badge-row">
+    <div class="badge g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="20 6 9 17 4 12"/></svg>No Upload</div>
+    <div class="badge b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>100% Private</div>
+    <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Instant</div>
+    <div class="badge p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Free Forever</div>
+  </div>
+</div></section>
+<section style="padding:0 0 64px;"><div class="wrap-md"><div class="tool-card">
+<div class="tool-head"><div class="tool-head-icon" style="background:rgba(124,92,252,0.12)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" width="18" height="18"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg></div><div><h2>Resize Image</h2><p>Change width &amp; height by pixels or percentage — aspect ratio lock included</p></div></div>
+<div class="tool-body">
+  <div class="field"><div class="fl">Select Image</div><div class="dz" id="dz-ri"><input type="file" accept="image/*" onchange="loadImg(this)" id="ri-inp"><div class="dz-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="1.5" width="22" height="22"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/></svg></div><div class="dz-t">Drop image here or click to browse</div><div class="dz-s">JPG, PNG, WEBP, GIF, BMP</div></div><div id="ri-loaded"></div><div id="ri-preview" style="text-align:center;margin-top:8px;"></div></div>
+  <div class="field"><div class="fl">Resize Mode</div><select id="ri-mode" onchange="updateMode()"><option value="pixels">By pixels (exact dimensions)</option><option value="percent">By percentage</option><option value="maxw">Max width (keep ratio)</option><option value="maxh">Max height (keep ratio)</option></select></div>
+  <div id="ri-fields"></div>
+  <div class="field"><div class="fl">Output Format</div><select id="ri-fmt"><option value="same">Same as input</option><option value="image/jpeg">JPEG</option><option value="image/png">PNG</option><option value="image/webp">WebP</option></select></div>
+  <div class="info" style="margin-top:4px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Resized with high-quality canvas interpolation. No uploads.</div>
+  <button class="btn" id="btn-ri" onclick="doResize()" style="margin-top:14px;">Resize &amp; Download</button>
+  <div class="prog" id="prog-ri"><div class="prog-track"><div class="prog-fill" id="pf-ri" style="width:0%"></div></div><div class="prog-txt" id="pt-ri">Resizing...</div></div>
+  <div class="res" id="res-ri"></div>
+</div></div>
+<script>
+let imgEl=null,origW=0,origH=0,imgFile=null;
+function updateMode(){
+  const m=document.getElementById('ri-mode').value,el=document.getElementById('ri-fields');
+  if(m==='pixels')el.innerHTML='<div class="row2 field"><div><div style="font-size:12px;color:var(--muted);margin-bottom:6px;">Width (px)</div><input type="number" id="ri-w" value="'+(origW||800)+'" oninput="syncR('w')"></div><div><div style="font-size:12px;color:var(--muted);margin-bottom:6px;">Height (px)</div><input type="number" id="ri-h" value="'+(origH||600)+'" oninput="syncR('h')"></div></div><label class="check-row"><input type="checkbox" id="lock-ar" checked><span class="check-lbl">Lock aspect ratio</span></label>';
+  else if(m==='percent')el.innerHTML='<div class="field"><div style="font-size:12px;color:var(--muted);margin-bottom:6px;">Scale %</div><input type="number" id="ri-pct" value="50" min="1" max="500"></div>';
+  else el.innerHTML='<div class="field"><div style="font-size:12px;color:var(--muted);margin-bottom:6px;">'+(m==='maxw'?'Max Width':'Max Height')+' (px)</div><input type="number" id="ri-max" value="'+(m==='maxw'?1200:800)+'"></div>';
+}
+function syncR(c){if(!document.getElementById('lock-ar')?.checked||!origW||!origH)return;if(c==='w'){const w=parseInt(document.getElementById('ri-w').value)||origW;document.getElementById('ri-h').value=Math.round(w*(origH/origW));}else{const h=parseInt(document.getElementById('ri-h').value)||origH;document.getElementById('ri-w').value=Math.round(h*(origW/origH));}}
+function loadImg(inp){const f=inp.files[0];if(!f)return;imgFile=f;const url=URL.createObjectURL(f);imgEl=new Image();imgEl.onload=()=>{origW=imgEl.width;origH=imgEl.height;document.getElementById('ri-loaded').innerHTML='<div class="fitem" style="margin-top:8px;"><div class="ficon fi-img">IMG</div><span class="fname">'+esc(f.name)+'</span><span class="fsize">'+origW+'x'+origH+' | '+fmtSize(f.size)+'</span></div>';document.getElementById('ri-preview').innerHTML='<img src="'+url+'" style="max-height:140px;border-radius:6px;border:1px solid var(--border);margin-top:6px;">';updateMode();};imgEl.src=url;}
+setupDrop('dz-ri',files=>{const i=document.getElementById('ri-inp');const d=new DataTransfer();if(files[0])d.items.add(files[0]);i.files=d.files;loadImg(i);});
+async function doResize(){
+  if(!imgEl){showRes('ri','err','Select an image first.');return;}
+  const btn=document.getElementById('btn-ri');btn.disabled=true;showProg('ri',true);hideRes('ri');
+  setP('ri',30,'Resizing...');
+  try{
+    const m=document.getElementById('ri-mode').value;let nw=origW,nh=origH;
+    if(m==='pixels'){nw=parseInt(document.getElementById('ri-w').value)||origW;nh=parseInt(document.getElementById('ri-h').value)||origH;}
+    else if(m==='percent'){const p=parseFloat(document.getElementById('ri-pct').value)/100;nw=Math.round(origW*p);nh=Math.round(origH*p);}
+    else if(m==='maxw'){const mx=parseInt(document.getElementById('ri-max').value);const r=Math.min(1,mx/origW);nw=Math.round(origW*r);nh=Math.round(origH*r);}
+    else{const mx=parseInt(document.getElementById('ri-max').value);const r=Math.min(1,mx/origH);nw=Math.round(origW*r);nh=Math.round(origH*r);}
+    const cv=document.createElement('canvas');cv.width=nw;cv.height=nh;const ctx=cv.getContext('2d');ctx.imageSmoothingQuality='high';ctx.drawImage(imgEl,0,0,nw,nh);
+    setP('ri',75,'Saving...');
+    const fmt=document.getElementById('ri-fmt').value;const mime=fmt==='same'?(imgFile.type||'image/jpeg'):fmt;
+    const ext=mime.split('/')[1]==='jpeg'?'jpg':mime.split('/')[1];
+    const blob=await new Promise(r=>cv.toBlob(r,mime,0.92));
+    dl(blob,imgFile.name.replace(/\.[^.]+$/,'')+'_'+nw+'x'+nh+'.'+ext);
+    setP('ri',100,'Done!');showRes('ri','ok','Resized to '+nw+'x'+nh+'px | '+fmtSize(blob.size));
+  }catch(e){showRes('ri','err','Error: '+e.message);}
+  btn.disabled=false;setTimeout(()=>showProg('ri',false),3000);
+}
+updateMode();
+</script></div></section>
+<section style="padding:48px 0;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="wrap-md"><div class="section-ey">FAQ</div><h2 class="section-t" style="font-size:26px;margin-bottom:24px;">Frequently Asked Questions</h2>
+  <div class="faq"><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Does resizing reduce quality?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">Downscaling maintains quality. Upscaling (making larger) may reduce sharpness as new pixels must be interpolated.</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Does aspect ratio lock work?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">Yes. When locked, changing width auto-updates height proportionally.</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What is the maximum output size?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">Browser canvas supports up to 16,384x16,384 on modern devices.</div></div></div></div></div>
+</section>
+<div id="footer-placeholder"></div>
+<script src="/js/shared.js"></script>
+<script>renderNav("/tools/");renderFooter();</script>
+</body></html>

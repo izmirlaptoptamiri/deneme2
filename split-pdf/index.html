@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Split PDF Online Free — Extract Pages from PDF | EncryptFiles.online</title>
+<meta name="description" content="Split PDF into individual pages or extract specific pages online for free. No upload required — split PDF files entirely in your browser instantly.">
+<meta name="keywords" content="split pdf online free, extract pages from pdf, pdf splitter online, separate pdf pages, split pdf into multiple files">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://encryptfiles.online/split-pdf/">
+<meta property="og:title" content="Split PDF Online Free — Extract Pages from PDF"><meta property="og:description" content="Split PDF into individual pages or extract specific pages online for free. No upload required — split PDF files entirely in your browser instantly.">
+<meta property="og:url" content="https://encryptfiles.online/split-pdf/"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/css/main.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Split PDF Online Free — Extract Pages from PDF","url":"https://encryptfiles.online/split-pdf/","description":"Split PDF into individual pages or extract specific pages online for free. No upload required — split PDF files entirely in your browser instantly.","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can I extract just one page from a PDF?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Use "Extract specific pages" mode and enter the page number. A single-page PDF will be downloaded."}}, {"@type": "Question", "name": "What is the maximum number of pages?", "acceptedAnswer": {"@type": "Answer", "text": "No artificial limit — limited only by your browser"s RAM."}}, {"@type": "Question", "name": "Will the split PDFs maintain original quality?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Pages are extracted without re-encoding, so quality is identical to the original."}}, {"@type": "Question", "name": "Can I reorder pages before splitting?", "acceptedAnswer": {"@type": "Answer", "text": "This tool focuses on splitting. To reorder pages, merge the resulting PDFs in the desired order using our Merge PDF tool."}}]}</script>
+</head>
+<body>
+<div class="bg-grid"></div><div class="bg-glow"></div><div class="bg-glow2"></div>
+<div id="nav-placeholder"></div>
+<section class="page-hero"><div class="wrap-sm text-center">
+  <nav class="breadcrumb" style="justify-content:center;" aria-label="breadcrumb"><a href="/">Home</a><span>›</span><a href="/tools/">Tools</a><span>›</span><span>PDF Splitter</span></nav>
+  <div class="eyebrow"><span class="eyebrow-dot"></span>PDF Splitter</div>
+  <h1 class="page-title">Split PDF Online<br><span class="grad">Extract Pages Free</span></h1>
+  <p class="page-sub">Split a PDF into individual pages, extract a page range, or pick specific pages. Download results as separate PDF files. Zero uploads.</p>
+  <div class="badge-row"><div class="badge g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="20 6 9 17 4 12"/></svg>No Upload</div><div class="badge b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>4 Split Modes</div><div class="badge "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Instant</div><div class="badge p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Private</div></div>
+</div></section>
+<section style="padding:0 0 64px;"><div class="wrap-md">
+<div class="tool-card">
+  <div class="tool-head">
+    <div class="tool-head-icon" style="background:rgba(255,84,112,0.12)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="var(--danger)" stroke-width="2" width="18" height="18"><line x1="12" y1="2" x2="12" y2="22"/><path d="M8 6H5a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h3"/><path d="M16 6h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/></svg>
+    </div>
+    <div><h2>Split PDF</h2><p>Extract specific pages or split a PDF into individual pages</p></div>
+  </div>
+  <div class="tool-body">
+    <div class="field">
+      <div class="fl">Select PDF to Split</div>
+      <div class="dz" id="dz1">
+        <input type="file" accept=".pdf" onchange="loadPDF(this)" id="pdf-input">
+        <div class="dz-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--danger)" stroke-width="1.5" width="22" height="22"><line x1="12" y1="2" x2="12" y2="22"/><path d="M8 6H5a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h3"/><path d="M16 6h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/></svg></div>
+        <div class="dz-t">Drop PDF here</div>
+        <div class="dz-s">Select a PDF to split or extract pages from</div>
+      </div>
+      <div id="pdf-loaded"></div>
+      <div id="page-info" style="font-size:12px;color:var(--muted);margin-top:8px;font-family:var(--mono);"></div>
+    </div>
+    <div class="field">
+      <div class="fl">Split Mode</div>
+      <select id="split-mode" onchange="updateSplitUI()">
+        <option value="all">Extract all pages — each page as a separate PDF</option>
+        <option value="range">Extract page range — e.g. pages 3 to 7</option>
+        <option value="pages">Extract specific pages — e.g. 1, 3, 5-8</option>
+        <option value="chunks">Split into equal chunks — e.g. every 5 pages</option>
+      </select>
+    </div>
+    <div id="split-options"></div>
+    <div class="info">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      All processing runs locally in your browser. Multiple output files will be downloaded in sequence automatically.
+    </div>
+    <button class="btn" id="btn-split" onclick="splitPDF()">✂️ Split PDF & Download</button>
+    <div class="prog" id="prog-s"><div class="prog-track"><div class="prog-fill" id="pf-s" style="width:0%"></div></div><div class="prog-txt" id="pt-s">Splitting...</div></div>
+    <div class="res" id="res-s"></div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script>
+let pdfBytes=null,totalPages=0;
+function loadPDF(input){const f=input.files[0];if(!f)return;const r=new FileReader();r.onload=async e=>{pdfBytes=new Uint8Array(e.target.result);const doc=await PDFLib.PDFDocument.load(pdfBytes,{ignoreEncryption:true});totalPages=doc.getPageCount();document.getElementById('pdf-loaded').innerHTML=`<div class="fitem" style="margin-top:8px;"><div class="ficon fi-pdf">PDF</div><span class="fname">${esc(f.name)}</span><span class="fsize">${totalPages} pages</span></div>`;document.getElementById('page-info').textContent=`${totalPages} pages detected`;updateSplitUI();};r.readAsArrayBuffer(f);}
+setupDrop('dz1',files=>{const inp=document.getElementById('pdf-input');const dt=new DataTransfer();if(files[0])dt.items.add(files[0]);inp.files=dt.files;loadPDF(inp);});
+function updateSplitUI(){
+  const mode=document.getElementById('split-mode').value;
+  const el=document.getElementById('split-options');
+  if(mode==='range')el.innerHTML=`<div class="row2 field"><div><div class="fl">From Page</div><input type="number" id="from-page" min="1" max="${totalPages||9999}" value="1"></div><div><div class="fl">To Page</div><input type="number" id="to-page" min="1" max="${totalPages||9999}" value="${totalPages||10}"></div></div>`;
+  else if(mode==='pages')el.innerHTML=`<div class="field"><div class="fl">Page Numbers</div><input type="text" id="page-list" placeholder="e.g. 1, 3, 5-8, 12"></div>`;
+  else if(mode==='chunks')el.innerHTML=`<div class="field"><div class="fl">Pages per Chunk</div><input type="number" id="chunk-size" min="1" value="5"></div>`;
+  else el.innerHTML='';
+}
+function parsePageList(str,total){
+  const pages=new Set();
+  str.split(',').forEach(part=>{part=part.trim();if(part.includes('-')){const[a,b]=part.split('-').map(n=>parseInt(n.trim()));for(let i=a;i<=Math.min(b,total);i++)pages.add(i);}else{const n=parseInt(part);if(n>=1&&n<=total)pages.add(n);}});
+  return [...pages].sort((a,b)=>a-b);
+}
+async function splitPDF(){
+  if(!pdfBytes){showRes('s','err','Please select a PDF file.');return;}
+  const btn=document.getElementById('btn-split');btn.disabled=true;showProg('s',true);hideRes('s');
+  const mode=document.getElementById('split-mode').value;
+  const orig=document.getElementById('pdf-input').files[0]?.name.replace('.pdf','')||'document';
+  try{
+    const src=await PDFLib.PDFDocument.load(pdfBytes,{ignoreEncryption:true});
+    let chunks=[];
+    if(mode==='all'){chunks=Array.from({length:totalPages},(_,i)=>({pages:[i],name:orig+'_page'+(i+1)+'.pdf'}));}
+    else if(mode==='range'){const a=parseInt(document.getElementById('from-page').value)-1;const b=parseInt(document.getElementById('to-page').value)-1;const pages=[];for(let i=a;i<=Math.min(b,totalPages-1);i++)pages.push(i);chunks=[{pages,name:orig+'_pages'+(a+1)+'to'+(b+1)+'.pdf'}];}
+    else if(mode==='pages'){const list=parsePageList(document.getElementById('page-list').value,totalPages);const pages=list.map(n=>n-1);chunks=[{pages,name:orig+'_extracted.pdf'}];}
+    else if(mode==='chunks'){const cs=parseInt(document.getElementById('chunk-size').value)||5;for(let i=0;i<totalPages;i+=cs){const pages=[];for(let j=i;j<Math.min(i+cs,totalPages);j++)pages.push(j);chunks.push({pages,name:orig+'_part'+(Math.floor(i/cs)+1)+'.pdf'});}}
+    for(let i=0;i<chunks.length;i++){
+      const chunk=chunks[i];setP('s',Math.round((i/chunks.length)*95),'Extracting: '+chunk.name);
+      const doc=await PDFLib.PDFDocument.create();const copied=await doc.copyPages(src,chunk.pages);copied.forEach(p=>doc.addPage(p));
+      const bytes=await doc.save();
+      await new Promise(res=>setTimeout(res,i*200));
+      dl(new Blob([bytes],{type:'application/pdf'}),chunk.name);
+    }
+    setP('s',100,'Done!');
+    showRes('s','ok',`✓ Split into ${chunks.length} file(s) — check your Downloads folder.`);
+  }catch(e){showRes('s','err','Error: '+e.message);}
+  btn.disabled=false;setTimeout(()=>showProg('s',false),3000);
+}
+updateSplitUI();
+</script></div></section>
+<section style="padding:48px 0;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="wrap-md"><div class="section-ey">FAQ</div><h2 class="section-t" style="font-size:26px;">Frequently Asked Questions</h2>
+  <div class="faq" style="margin-top:24px;"><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I extract just one page from a PDF?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">Yes. Use 'Extract specific pages' mode and enter the page number. A single-page PDF will be downloaded.</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What is the maximum number of pages?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">No artificial limit — limited only by your browser's RAM.</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Will the split PDFs maintain original quality?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">Yes. Pages are extracted without re-encoding, so quality is identical to the original.</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I reorder pages before splitting?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">This tool focuses on splitting. To reorder pages, merge the resulting PDFs in the desired order using our Merge PDF tool.</div></div></div></div></div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="/js/shared.js"></script>
+<script>renderNav('/tools/');renderFooter();</script>
+</body></html>

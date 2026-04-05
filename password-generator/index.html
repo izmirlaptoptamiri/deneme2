@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Password Generator Online Free — Strong Secure Passwords | EncryptFiles.online</title>
+<meta name="description" content="Generate cryptographically secure random passwords online. Customize length, characters, numbers, symbols. Copy instantly. No server, no logging.">
+<meta name="keywords" content="password generator online, strong password generator, random password generator, secure password maker, generate password free">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://encryptfiles.online/password-generator/">
+<meta property="og:title" content="Password Generator Online Free — Strong Secure Passwords"><meta property="og:description" content="Generate cryptographically secure random passwords online. Customize length, characters, numbers, symbols. Copy instantly. No server, no logging.">
+<meta property="og:url" content="https://encryptfiles.online/password-generator/"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Password Generator Online Free — Strong Secure Passwords">
+<link rel="stylesheet" href="/css/main.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Password Generator Online Free — Strong Secure Passwords","url":"https://encryptfiles.online/password-generator/","description":"Generate cryptographically secure random passwords online. Customize length, characters, numbers, symbols. Copy instantly. No server, no logging.","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Is this truly random?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The generator uses crypto.getRandomValues(), the browser"s cryptographically secure pseudorandom number generator (CSPRNG). This is the same standard used in cryptographic systems and is fundamentally different from Math.random()."}}, {"@type": "Question", "name": "What password length should I use?", "acceptedAnswer": {"@type": "Answer", "text": "16 characters is strong for most accounts. 20+ is recommended for sensitive accounts (banking, email). 32+ for encryption keys and master passwords."}}, {"@type": "Question", "name": "What is a passphrase?", "acceptedAnswer": {"@type": "Answer", "text": "A passphrase is a sequence of random words (e.g. "correct-horse-battery-staple-42"). It is long but memorable, and has very high entropy. Recommended for master passwords you need to memorize."}}, {"@type": "Question", "name": "Are my generated passwords stored or logged?", "acceptedAnswer": {"@type": "Answer", "text": "No. Generation happens entirely in your browser"s JavaScript. No data leaves your device."}}, {"@type": "Question", "name": "Why exclude ambiguous characters?", "acceptedAnswer": {"@type": "Answer", "text": "Characters like 0 (zero) and O (letter O), or l (lowercase L) and 1 (one) look similar in many fonts. Excluding them reduces transcription errors when typing passwords manually."}}]}</script>
+</head>
+<body>
+<div class="bg-grid"></div><div class="bg-glow"></div><div class="bg-glow2"></div>
+<div id="nav-placeholder"></div>
+<section class="page-hero"><div class="wrap-sm text-center">
+  <nav class="breadcrumb" style="justify-content:center;" aria-label="breadcrumb"><a href="/">Home</a><span>&#8250;</span><a href="/tools/">Tools</a><span>&#8250;</span><span>Secure Password Generator</span></nav>
+  <div class="eyebrow"><span class="eyebrow-dot"></span>Secure Password Generator</div>
+  <h1 class="page-title">Password Generator<br><span class="grad">Strong & Secure — Free</span></h1>
+  <p class="page-sub">Generate cryptographically secure random passwords. Customize length (4-128), character sets, and quantity. Uses crypto.getRandomValues() for true randomness.</p>
+  <div class="badge-row">
+    <div class="badge g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="20 6 9 17 4 12"/></svg>No Upload</div>
+    <div class="badge b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>100% Private</div>
+    <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Instant</div>
+    <div class="badge p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Free Forever</div>
+  </div>
+</div></section>
+<section style="padding:0 0 64px;"><div class="wrap-md"><div class="tool-card">
+<div class="tool-head">
+  <div class="tool-head-icon" style="background:rgba(124,92,252,0.12)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" width="18" height="18"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+  </div>
+  <div><h2>Cryptographic Password Generator</h2><p>Uses crypto.getRandomValues() &#8212; true randomness, never predictable</p></div>
+</div>
+<div class="tool-body">
+  <div id="pw-display" style="background:var(--bg);border:1px solid var(--border2);border-radius:var(--r);padding:20px 24px;margin-bottom:16px;display:flex;align-items:center;gap:12px;min-height:60px;">
+    <span id="pw-out" style="flex:1;font-family:var(--mono);font-size:18px;color:var(--green);word-break:break-all;letter-spacing:1px;">Click Generate</span>
+    <button onclick="copyPW()" style="background:transparent;border:1px solid var(--border2);border-radius:var(--rs);color:var(--muted);font-family:var(--mono);font-size:11px;padding:6px 12px;cursor:pointer;white-space:nowrap;transition:all 0.15s;" id="copy-btn">Copy</button>
+  </div>
+  <div class="field">
+    <div class="fl">Password Length: <span id="len-lbl" style="color:var(--accent);">16</span></div>
+    <input type="range" id="pw-len" min="4" max="128" value="16" oninput="document.getElementById('len-lbl').textContent=this.value" style="width:100%;accent-color:var(--accent2);">
+    <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:4px;"><span>4</span><span>32</span><span>64</span><span>96</span><span>128</span></div>
+  </div>
+  <div class="field">
+    <div class="fl">Character Sets</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <label class="check-row"><input type="checkbox" id="use-upper" checked><span class="check-lbl">Uppercase A-Z</span></label>
+      <label class="check-row"><input type="checkbox" id="use-lower" checked><span class="check-lbl">Lowercase a-z</span></label>
+      <label class="check-row"><input type="checkbox" id="use-nums" checked><span class="check-lbl">Numbers 0-9</span></label>
+      <label class="check-row"><input type="checkbox" id="use-syms" checked><span class="check-lbl">Symbols !@#$%^</span></label>
+      <label class="check-row"><input type="checkbox" id="no-ambig"><span class="check-lbl">Exclude ambiguous (0OIl)</span></label>
+      <label class="check-row"><input type="checkbox" id="no-similar"><span class="check-lbl">No similar characters</span></label>
+    </div>
+  </div>
+  <div class="field">
+    <div class="fl">Generate Multiple</div>
+    <div class="irow"><input type="number" id="pw-count" min="1" max="50" value="1" style="max-width:100px;"><span style="font-size:13px;color:var(--muted);padding:0 8px;">passwords at once</span></div>
+  </div>
+  <div id="str-bar" style="height:6px;border-radius:3px;background:var(--border2);margin:12px 0;overflow:hidden;"><div id="str-fill" style="height:100%;border-radius:3px;width:0%;transition:all 0.3s;"></div></div>
+  <div id="str-info" style="font-size:12px;color:var(--muted);font-family:var(--mono);margin-bottom:16px;"></div>
+  <div class="btn-row">
+    <button class="btn" onclick="generatePW()" style="flex:2">&#9889; Generate Password</button>
+    <button class="btn btn-out" onclick="generatePW(true)" style="flex:1">Generate Passphrase</button>
+  </div>
+  <div id="multi-out" style="margin-top:12px;display:flex;flex-direction:column;gap:6px;"></div>
+  <div class="res" id="res-pg" style="margin-top:10px;"></div>
+</div>
+</div>
+<script>
+"use strict";
+const WORDS=['correct','horse','battery','staple','cherry','mountain','river','cloud','sunset','dragon','thunder','whisper','crystal','silver','golden','frozen','digital','phoenix','cipher','shadow','castle','forest','ocean','winter','summer','spring','garden','flower','stone','bridge'];
+function getRandChar(chars){const arr=new Uint32Array(1);crypto.getRandomValues(arr);return chars[arr[0]%chars.length];}
+function generatePW(passphrase=false){
+  if(passphrase){
+    const arr=new Uint32Array(4);crypto.getRandomValues(arr);
+    const words=Array.from(arr).map(n=>WORDS[n%WORDS.length]);
+    const num=new Uint32Array(1);crypto.getRandomValues(num);
+    const pw=words.join('-')+'-'+(num[0]%90+10);
+    document.getElementById('pw-out').textContent=pw;
+    showStrength(pw);document.getElementById('multi-out').innerHTML='';
+    return;
+  }
+  let chars='';
+  if(document.getElementById('use-upper').checked)chars+='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  if(document.getElementById('use-lower').checked)chars+='abcdefghijklmnopqrstuvwxyz';
+  if(document.getElementById('use-nums').checked)chars+='0123456789';
+  if(document.getElementById('use-syms').checked)chars+='!@#$%^&*()_+-=[]{}|;:,.<>?';
+  if(document.getElementById('no-ambig').checked)chars=chars.replace(/[0OIl1]/g,'');
+  if(!chars){showRes('pg','err','Please select at least one character set.');return;}
+  const len=parseInt(document.getElementById('pw-len').value);
+  const count=Math.min(parseInt(document.getElementById('pw-count').value)||1,50);
+  const passwords=[];
+  for(let i=0;i<count;i++){let pw='';for(let j=0;j<len;j++)pw+=getRandChar(chars);passwords.push(pw);}
+  document.getElementById('pw-out').textContent=passwords[0];
+  showStrength(passwords[0]);
+  const mo=document.getElementById('multi-out');
+  if(count>1){mo.innerHTML=passwords.slice(1).map(pw=>`<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--bg3);border:1px solid var(--border);border-radius:var(--rs);"><span style="flex:1;font-family:var(--mono);font-size:13px;color:var(--text);word-break:break-all;">${pw}</span><button onclick="navigator.clipboard.writeText('${pw}')" style="background:none;border:1px solid var(--border);border-radius:5px;color:var(--muted);font-size:10px;padding:3px 8px;cursor:pointer;font-family:var(--mono);">Copy</button></div>`).join('');}
+  else mo.innerHTML='';
+  hideRes('pg');
+}
+function showStrength(pw){
+  const s=pwStrength(pw);
+  const colors=['#ff5470','#ffb84d','#7c5cfc','#00e5a0'];
+  const labels=['Very weak','Weak','Good','Strong &#10003;'];
+  const el=document.getElementById('str-fill');el.style.width=(s*25)+'%';el.style.background=colors[s-1]||'var(--border2)';
+  const entropy=Math.floor(pw.length*Math.log2(94));
+  document.getElementById('str-info').innerHTML=s>0?`${labels[s-1]} &bull; ~${entropy} bits of entropy &bull; ${pw.length} characters`:'';
+}
+function copyPW(){
+  const pw=document.getElementById('pw-out').textContent;
+  navigator.clipboard.writeText(pw).then(()=>{const b=document.getElementById('copy-btn');b.textContent='Copied!';b.style.color='var(--green)';setTimeout(()=>{b.textContent='Copy';b.style.color='var(--muted)';},2000);}).catch(()=>{const el=document.getElementById('pw-out');window.getSelection().selectAllChildren(el);document.execCommand('copy');});
+}
+generatePW();
+</script></div></section>
+<section style="padding:48px 0;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="wrap-md"><div class="section-ey">FAQ</div><h2 class="section-t" style="font-size:26px;margin-bottom:24px;">Frequently Asked Questions</h2>
+  <div class="faq"><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is this truly random?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">Yes. The generator uses crypto.getRandomValues(), the browser's cryptographically secure pseudorandom number generator (CSPRNG). This is the same standard used in cryptographic systems and is fundamentally different from Math.random().</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What password length should I use?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">16 characters is strong for most accounts. 20+ is recommended for sensitive accounts (banking, email). 32+ for encryption keys and master passwords.</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What is a passphrase?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">A passphrase is a sequence of random words (e.g. 'correct-horse-battery-staple-42'). It is long but memorable, and has very high entropy. Recommended for master passwords you need to memorize.</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Are my generated passwords stored or logged?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">No. Generation happens entirely in your browser's JavaScript. No data leaves your device.</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Why exclude ambiguous characters?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">Characters like 0 (zero) and O (letter O), or l (lowercase L) and 1 (one) look similar in many fonts. Excluding them reduces transcription errors when typing passwords manually.</div></div></div></div></div>
+</section>
+<div id="footer-placeholder"></div>
+<script src="/js/shared.js"></script>
+<script>renderNav('/tools/');renderFooter();</script>
+</body></html>

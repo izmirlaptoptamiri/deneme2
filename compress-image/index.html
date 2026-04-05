@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Compress Image Online Free — Reduce Image File Size | EncryptFiles.online</title>
+<meta name="description" content="Compress JPG, PNG, WEBP images online for free. Reduce image size without quality loss. Batch processing. No upload required.">
+<meta name="keywords" content="compress image online free, reduce image size, image compressor online, shrink jpg png webp, photo compressor">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://encryptfiles.online/compress-image/">
+<meta property="og:title" content="Compress Image Online Free — Reduce Image File Size"><meta property="og:description" content="Compress JPG, PNG, WEBP images online for free. Reduce image size without quality loss. Batch processing. No upload required.">
+<meta property="og:url" content="https://encryptfiles.online/compress-image/"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/css/main.css">
+<script type="application/ld+json">{ "@context":"https://schema.org","@type":"WebApplication","name":"Compress Image Online Free — Reduce Image File Size","url":"https://encryptfiles.online/compress-image/","description":"Compress JPG, PNG, WEBP images online for free. Reduce image size without quality loss. Batch processing. No upload required.","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{ "@type":"Offer","price":"0","priceCurrency":"USD"} }</script>
+<script type="application/ld+json">{ "@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "What quality setting should I use?", "acceptedAnswer": {"@type": "Answer", "text": "70-80% is the sweet spot — visually identical to original but 50-70% smaller. Use 85-95% for professional photos."}}, {"@type": "Question", "name": "Does this work on PNG?", "acceptedAnswer": {"@type": "Answer", "text": "PNG is lossless. Converting PNG to JPEG dramatically reduces size. To keep transparency, keep PNG format — the compression removes metadata."}}, {"@type": "Question", "name": "What is WebP?", "acceptedAnswer": {"@type": "Answer", "text": "A modern format by Google — typically 25-35% smaller than JPEG at same quality, supported by all modern browsers."}}, {"@type": "Question", "name": "Is there a batch limit?", "acceptedAnswer": {"@type": "Answer", "text": "No. Add as many images as you need — processed one by one in your browser."}}] }</script>
+</head>
+<body>
+<div class="bg-grid"></div><div class="bg-glow"></div><div class="bg-glow2"></div>
+<div id="nav-placeholder"></div>
+<section class="page-hero"><div class="wrap-sm text-center">
+  <nav class="breadcrumb" style="justify-content:center;"><a href="/">Home</a><span>&#8250;</span><a href="/tools/">Tools</a><span>&#8250;</span><span>Image Compressor</span></nav>
+  <div class="eyebrow"><span class="eyebrow-dot"></span>Image Compressor</div>
+  <h1 class="page-title">Compress Image<br><span class="grad">Online Free — Batch Support</span></h1>
+  <p class="page-sub">Reduce JPG, PNG, WEBP image file size without visible quality loss. Process multiple images at once. Everything runs in your browser.</p>
+  <div class="badge-row">
+    <div class="badge g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="20 6 9 17 4 12"/></svg>No Upload</div>
+    <div class="badge b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>100% Private</div>
+    <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Instant</div>
+    <div class="badge p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Free Forever</div>
+  </div>
+</div></section>
+<section style="padding:0 0 64px;"><div class="wrap-md"><div class="tool-card">
+<div class="tool-head"><div class="tool-head-icon" style="background:rgba(0,229,160,0.12)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" width="18" height="18"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div><div><h2>Compress Images</h2><p>Reduce file size — batch process multiple images at once</p></div></div>
+<div class="tool-body">
+  <div class="field"><div class="fl">Select Images</div><div class="dz" id="dz-ci"><input type="file" accept="image/jpeg,image/png,image/webp" multiple onchange="addImgs(this.files)"><div class="dz-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" width="22" height="22"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div><div class="dz-t">Drop JPG, PNG, or WEBP images</div><div class="dz-s">Batch compress multiple images at once</div></div></div>
+  <div id="ci-list" style="display:flex;flex-direction:column;gap:6px;margin-top:8px;"></div>
+  <div class="field" style="margin-top:14px;"><div class="fl">Quality: <span id="qlbl" style="color:var(--accent)">75%</span></div>
+    <input type="range" id="quality" min="1" max="100" value="75" oninput="document.getElementById('qlbl').textContent=this.value+'%'" style="width:100%;accent-color:var(--accent2);">
+    <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:4px;"><span>Smallest</span><span>Balanced (75%)</span><span>Best quality</span></div>
+  </div>
+  <div class="field"><div class="fl">Output Format</div><select id="ci-fmt"><option value="same">Same as input</option><option value="image/jpeg">JPEG (smallest)</option><option value="image/webp">WebP (modern)</option><option value="image/png">PNG (lossless)</option></select></div>
+  <div id="ci-stats" style="display:none;" class="stats">
+    <div class="stat"><div class="stat-n" id="ci-before">—</div><div class="stat-l">Before</div></div>
+    <div class="stat"><div class="stat-n" id="ci-after">—</div><div class="stat-l">After</div></div>
+    <div class="stat"><div class="stat-n" id="ci-saved">—</div><div class="stat-l">Saved</div></div>
+  </div>
+  <button class="btn" id="btn-ci" onclick="compressImgs()" style="margin-top:16px;">Compress &amp; Download All</button>
+  <div class="prog" id="prog-ci"><div class="prog-track"><div class="prog-fill" id="pf-ci" style="width:0%"></div></div><div class="prog-txt" id="pt-ci">Compressing...</div></div>
+  <div class="res" id="res-ci"></div>
+</div></div>
+<script>
+let imgs=[];
+function addImgs(files){for(const f of files)imgs.push(f);renderCIList();}
+setupDrop('dz-ci',files=>addImgs(files));
+function renderCIList(){document.getElementById('ci-list').innerHTML=imgs.map((f,i)=>'<div class="fitem"><div class="ficon fi-img">IMG</div><span class="fname">'+esc(f.name)+'</span><span class="fsize">'+fmtSize(f.size)+'</span><button class="fdel" onclick="imgs.splice('+i+',1);renderCIList()">&#215;</button></div>').join('');}
+async function compressImgs(){
+  if(!imgs.length){showRes('ci','err','Add at least one image.');return;}
+  const btn=document.getElementById('btn-ci');btn.disabled=true;showProg('ci',true);hideRes('ci');
+  const q=parseInt(document.getElementById('quality').value)/100;
+  const fmt=document.getElementById('ci-fmt').value;
+  let tb=0,ta=0;
+  try{
+    for(let i=0;i<imgs.length;i++){
+      setP('ci',Math.round(i/imgs.length*95),'Compressing: '+imgs[i].name);
+      const url=URL.createObjectURL(imgs[i]);
+      const img=new Image();await new Promise(r=>{img.onload=r;img.src=url;});
+      const cv=document.createElement('canvas');cv.width=img.width;cv.height=img.height;cv.getContext('2d').drawImage(img,0,0);
+      URL.revokeObjectURL(url);
+      const mime=fmt==='same'?(imgs[i].type||'image/jpeg'):fmt;
+      const blob=await new Promise(r=>cv.toBlob(r,mime,q));
+      tb+=imgs[i].size;ta+=blob.size;
+      const ext=mime==='image/webp'?'webp':mime==='image/png'?'png':'jpg';
+      await new Promise(r=>setTimeout(r,i*150));
+      dl(blob,imgs[i].name.replace(/\.[^.]+$/,'')+'_compressed.'+ext);
+    }
+    setP('ci',100,'Done!');
+    document.getElementById('ci-stats').style.display='grid';
+    document.getElementById('ci-before').textContent=fmtSize(tb);
+    document.getElementById('ci-after').textContent=fmtSize(ta);
+    document.getElementById('ci-saved').textContent='-'+Math.round((1-ta/tb)*100)+'%';
+    showRes('ci','ok',imgs.length+' image(s) compressed. Total savings: '+fmtSize(tb-ta));
+    imgs=[];renderCIList();
+  }catch(e){showRes('ci','err','Error: '+e.message);}
+  btn.disabled=false;setTimeout(()=>showProg('ci',false),3000);
+}
+</script></div></section>
+<section style="padding:48px 0;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="wrap-md"><div class="section-ey">FAQ</div><h2 class="section-t" style="font-size:26px;margin-bottom:24px;">Frequently Asked Questions</h2>
+  <div class="faq"><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What quality setting should I use?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">70-80% is the sweet spot — visually identical to original but 50-70% smaller. Use 85-95% for professional photos.</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Does this work on PNG?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">PNG is lossless. Converting PNG to JPEG dramatically reduces size. To keep transparency, keep PNG format — the compression removes metadata.</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What is WebP?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">A modern format by Google — typically 25-35% smaller than JPEG at same quality, supported by all modern browsers.</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is there a batch limit?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">No. Add as many images as you need — processed one by one in your browser.</div></div></div></div></div>
+</section>
+<div id="footer-placeholder"></div>
+<script src="/js/shared.js"></script>
+<script>renderNav("/tools/");renderFooter();</script>
+</body></html>

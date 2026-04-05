@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>PDF to JPG Online Free — Convert PDF Pages to Images | EncryptFiles.online</title>
+<meta name="description" content="Convert PDF pages to JPG, PNG, or WebP images online for free. High-quality rendering, adjustable DPI. No upload — conversion runs in your browser.">
+<meta name="keywords" content="pdf to jpg online free, pdf to png converter, convert pdf to image, pdf pages to images, pdf to jpeg online">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://encryptfiles.online/pdf-to-jpg/">
+<meta property="og:title" content="PDF to JPG Online Free — Convert PDF Pages to Images"><meta property="og:description" content="Convert PDF pages to JPG, PNG, or WebP images online for free. High-quality rendering, adjustable DPI. No upload — conversion runs in your browser.">
+<meta property="og:url" content="https://encryptfiles.online/pdf-to-jpg/"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/css/main.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"PDF to JPG Online Free — Convert PDF Pages to Images","url":"https://encryptfiles.online/pdf-to-jpg/","description":"Convert PDF pages to JPG, PNG, or WebP images online for free. High-quality rendering, adjustable DPI. No upload — conversion runs in your browser.","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "What image formats are supported?", "acceptedAnswer": {"@type": "Answer", "text": "JPEG (best for photos and color-heavy PDFs), PNG (lossless, best for text and diagrams), and WebP (modern format, excellent quality-to-size ratio)."}}, {"@type": "Question", "name": "What DPI should I choose?", "acceptedAnswer": {"@type": "Answer", "text": "72 DPI is screen resolution (suitable for web use). 144 DPI (default) is sharp on all displays. 216 DPI is high-resolution suitable for printing."}}, {"@type": "Question", "name": "Can I convert only specific pages?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Enter a page range like "1-5" or specific pages like "1, 3, 5" in the Page Range field."}}, {"@type": "Question", "name": "Will text in the PDF be sharp in the output image?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. PDF text is vector-based and renders at any DPI without pixelation."}}]}</script>
+</head>
+<body>
+<div class="bg-grid"></div><div class="bg-glow"></div><div class="bg-glow2"></div>
+<div id="nav-placeholder"></div>
+<section class="page-hero"><div class="wrap-sm text-center">
+  <nav class="breadcrumb" style="justify-content:center;" aria-label="breadcrumb"><a href="/">Home</a><span>›</span><a href="/tools/">Tools</a><span>›</span><span>PDF to Image Converter</span></nav>
+  <div class="eyebrow"><span class="eyebrow-dot"></span>PDF to Image Converter</div>
+  <h1 class="page-title">PDF to JPG<br><span class="grad">Online Free</span></h1>
+  <p class="page-sub">Convert PDF pages to JPEG, PNG, or WebP images. Choose quality, DPI, and page range. Each page downloads as a separate image. Zero uploads.</p>
+  <div class="badge-row"><div class="badge g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="20 6 9 17 4 12"/></svg>No Upload</div><div class="badge b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>JPG PNG WebP</div><div class="badge "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>High DPI Support</div><div class="badge p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Private</div></div>
+</div></section>
+<section style="padding:0 0 64px;"><div class="wrap-md">
+<div class="tool-card">
+  <div class="tool-head">
+    <div class="tool-head-icon" style="background:rgba(0,229,160,0.12)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" width="18" height="18"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+    </div>
+    <div><h2>PDF to JPG — Convert Pages to Images</h2><p>Convert each PDF page to a high-quality image file</p></div>
+  </div>
+  <div class="tool-body">
+    <div class="field">
+      <div class="fl">Select PDF File</div>
+      <div class="dz" id="dz1">
+        <input type="file" accept=".pdf" onchange="loadPDF(this)" id="pdf-input">
+        <div class="dz-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" width="22" height="22"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
+        <div class="dz-t">Drop PDF here or click to browse</div>
+        <div class="dz-s">Each page will be converted to a separate image</div>
+      </div>
+      <div id="pdf-loaded"></div>
+    </div>
+    <div class="field">
+      <div class="fl">Image Settings</div>
+      <div class="row3">
+        <div><div style="font-size:12px;color:var(--muted);margin-bottom:6px;">Format</div><select id="img-format"><option value="jpeg">JPEG</option><option value="png">PNG</option><option value="webp">WebP</option></select></div>
+        <div><div style="font-size:12px;color:var(--muted);margin-bottom:6px;">Quality (JPEG/WebP)</div><input type="number" id="img-quality" min="50" max="100" value="92"></div>
+        <div><div style="font-size:12px;color:var(--muted);margin-bottom:6px;">Scale (DPI)</div><select id="img-scale"><option value="1">72 DPI (screen)</option><option value="2" selected>144 DPI (standard)</option><option value="3">216 DPI (high res)</option></select></div>
+      </div>
+    </div>
+    <div class="field">
+      <div class="fl">Page Range (optional)</div>
+      <input type="text" id="page-range" placeholder="All pages (or e.g. 1-3, 5)">
+    </div>
+    <div id="preview-area" style="display:none;margin-top:12px;"></div>
+    <button class="btn" id="btn-conv" onclick="pdfToImages()">🖼️ Convert to Images & Download</button>
+    <div class="prog" id="prog-ji"><div class="prog-track"><div class="prog-fill" id="pf-ji" style="width:0%"></div></div><div class="prog-txt" id="pt-ji">Rendering pages...</div></div>
+    <div class="res" id="res-ji"></div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+let pdfBytes=null,pdfDoc=null;
+function loadPDF(input){const f=input.files[0];if(!f)return;const r=new FileReader();r.onload=async e=>{pdfBytes=e.target.result;pdfDoc=await pdfjsLib.getDocument({data:pdfBytes}).promise;document.getElementById('pdf-loaded').innerHTML=`<div class="fitem" style="margin-top:8px;"><div class="ficon fi-pdf">PDF</div><span class="fname">${esc(f.name)}</span><span class="fsize">${pdfDoc.numPages} pages</span></div>`;};r.readAsArrayBuffer(f);}
+setupDrop('dz1',files=>{const inp=document.getElementById('pdf-input');const dt=new DataTransfer();if(files[0])dt.items.add(files[0]);inp.files=dt.files;loadPDF(inp);});
+async function pdfToImages(){
+  if(!pdfDoc){showRes('ji','err','Please select a PDF file.');return;}
+  const btn=document.getElementById('btn-conv');btn.disabled=true;showProg('ji',true);hideRes('ji');
+  const fmt=document.getElementById('img-format').value;
+  const quality=parseInt(document.getElementById('img-quality').value)/100;
+  const scale=parseInt(document.getElementById('img-scale').value);
+  const total=pdfDoc.numPages;
+  const rangeStr=document.getElementById('page-range').value.trim();
+  let pages=[];
+  if(rangeStr){const parts=rangeStr.split(',');for(const p of parts){if(p.includes('-')){const[a,b]=p.split('-').map(Number);for(let i=a;i<=Math.min(b,total);i++)pages.push(i);}else{const n=parseInt(p);if(n>=1&&n<=total)pages.push(n);}}}
+  else{for(let i=1;i<=total;i++)pages.push(i);}
+  const preview=document.getElementById('preview-area');preview.style.display='block';preview.innerHTML='<div style="display:flex;flex-wrap:wrap;gap:8px;">';
+  try{
+    const orig=document.getElementById('pdf-input').files[0]?.name.replace('.pdf','')||'document';
+    for(let i=0;i<pages.length;i++){
+      setP('ji',Math.round((i/pages.length)*95),'Rendering page '+pages[i]+'...');
+      const page=await pdfDoc.getPage(pages[i]);
+      const vp=page.getViewport({scale});
+      const canvas=document.createElement('canvas');canvas.width=vp.width;canvas.height=vp.height;
+      const ctx=canvas.getContext('2d');
+      await page.render({canvasContext:ctx,viewport:vp}).promise;
+      const mimeType=fmt==='png'?'image/png':fmt==='webp'?'image/webp':'image/jpeg';
+      const dataURL=canvas.toDataURL(mimeType,quality);
+      const name=`${orig}_page${pages[i]}.${fmt}`;
+      preview.innerHTML+=`<img src="${dataURL}" style="height:120px;border:1px solid var(--border);border-radius:6px;" title="${name}">`;
+      await new Promise(r=>setTimeout(r,i*150));
+      const link=document.createElement('a');link.href=dataURL;link.download=name;link.click();
+    }
+    setP('ji',100,'Done!');
+    showRes('ji','ok',`✓ ${pages.length} page(s) converted to ${fmt.toUpperCase()} and downloaded.`);
+  }catch(e){showRes('ji','err','Error: '+e.message);}
+  btn.disabled=false;setTimeout(()=>showProg('ji',false),3000);
+}
+</script></div></section>
+<section style="padding:48px 0;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="wrap-md"><div class="section-ey">FAQ</div><h2 class="section-t" style="font-size:26px;">Frequently Asked Questions</h2>
+  <div class="faq" style="margin-top:24px;"><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What image formats are supported?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">JPEG (best for photos and color-heavy PDFs), PNG (lossless, best for text and diagrams), and WebP (modern format, excellent quality-to-size ratio).</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What DPI should I choose?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">72 DPI is screen resolution (suitable for web use). 144 DPI (default) is sharp on all displays. 216 DPI is high-resolution suitable for printing.</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I convert only specific pages?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">Yes. Enter a page range like '1-5' or specific pages like '1, 3, 5' in the Page Range field.</div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Will text in the PDF be sharp in the output image?<div class="faq-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-a"><div class="faq-ai">Yes. PDF text is vector-based and renders at any DPI without pixelation.</div></div></div></div></div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="/js/shared.js"></script>
+<script>renderNav('/tools/');renderFooter();</script>
+</body></html>
